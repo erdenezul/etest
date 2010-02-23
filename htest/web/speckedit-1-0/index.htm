@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Sample Page for Speck Edit</title>
+    <script src="speck/speck.js" type="text/javascript"></script>
+    <link href="speck/speck.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="speckInit();" style="background-color:#ddd;">
+    <div style="width:768px;font-family:Arial;background-color: #fff;margin:auto;padding:20px;">
+    
+        <h1>Speck Edit Sample</h1>
+        <p>When speckInit(); is called any text area with the class "iEdit" will be converted to a speck edit window.  The text area must have an id.  Width and height settings may be applied.</p>
+        
+        <textarea id="SampleEdit" style="width:600px;height:300px;" cols="" rows="" class="iEdit" >This is the sample speck edit window.  Begin editing this text using the controls above.</textarea>
+        
+        <p>Output from the editor is captured using the iEdit[] collection with the form: iEdit["TextAreaId"].html();</p>
+        <input type="button" value="Show Output" onclick="document.getElementById('ShowOutput').innerHTML = iEdit['SampleEdit'].html();" />
+        <hr />
+        <div id="ShowOutput">
+        
+        </div>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="modls.Question">
+    <id name="id">
+      <generator class="native"/>
+    </id>
+    <property name="question"/>
+    <many-to-one class="modls.UFile" column="ufile_id" name="ufile"/>
+    <many-to-one class="modls.Topic" column="topic_id" name="topic"/>
+    <many-to-one class="modls.Difficulty" name="difficult"/>
+    <joined-subclass name="modls.MultipleChoice">
+      <key column="multiplechoice_id"/>
+      <set cascade="all" name="answer">
+        <key column="question_id"/>
+        <one-to-many class="modls.Answer"/>
+      </set>
+    </joined-subclass>
+    <joined-subclass name="modls.MultipleResponse">
+      <key column="multipleresponse_id"/>
+      <set cascade="all" name="answer">
+        <key column="question_id"/>
+        <one-to-many class="modls.Answer"/>
+      </set>
+    </joined-subclass>
+    <joined-subclass name="modls.TrueFalse">
+      <key column="truefalse_id"/>
+      <property name="value"/>
+      <property name="point"/>
+    </joined-subclass>
+    <joined-subclass name="modls.FillInBlank">
+      <key column="fillinblank_id"/>
+      <set name="answers" cascade="all" lazy="false">
+        <key column="fillinblank_id"/>
+        <one-to-many class="modls.FAnswer"/>
+      </set>
+    </joined-subclass>
+  </class>
+</hibernate-mapping>

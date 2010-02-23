@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="0" hostname="tulga-laptop" name="TestOne" tests="1" time="8.765" timestamp="2009-12-23T11:55:52">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.boot.library.path" value="/home/tulga/Documents/APIs/jdk1.6.0_16/jre/lib/i386" />
+    <property name="java.vm.version" value="14.2-b01" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Server VM" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="user.country" value="US" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="user.dir" value="/home/tulga/My_Sites/test" />
+    <property name="java.runtime.version" value="1.6.0_16-b01" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="java.endorsed.dirs" value="/home/tulga/Documents/APIs/jdk1.6.0_16/jre/lib/endorsed" />
+    <property name="os.arch" value="i386" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="line.separator" value="
+" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="os.name" value="Linux" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="java.library.path" value="/home/tulga/Documents/APIs/jdk1.6.0_16/jre/lib/i386/server:/home/tulga/Documents/APIs/jdk1.6.0_16/jre/lib/i386:/home/tulga/Documents/APIs/jdk1.6.0_16/jre/../lib/i386:/home/tulga/Documents/APIs/jdk1.6.0_16/jre/lib/i386/client:/home/tulga/Documents/APIs/jdk1.6.0_16/jre/lib/i386:/home/tulga/Documents/APIs/jdk1.6.0_16/jre/../lib/i386:/usr/java/packages/lib/i386:/lib:/usr/lib" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="50.0" />
+    <property name="sun.management.compiler" value="HotSpot Tiered Compilers" />
+    <property name="os.version" value="2.6.28-16-generic" />
+    <property name="user.home" value="/home/tulga" />
+    <property name="user.timezone" value="" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="user.name" value="tulga" />
+    <property name="java.class.path" value="/usr/local/netbeans-6.7.1/java2/ant/lib/ant.jar:/usr/local/netbeans-6.7.1/java2/ant/lib/ant-junit.jar:/usr/local/netbeans-6.7.1/java2/modules/ext/hibernate/antlr-2.7.6.jar:/usr/local/netbeans-6.7.1/java2/modules/ext/hibernate/asm.jar:/usr/local/netbeans-6.7.1/java2/modules/ext/hibernate/asm-attrs.jar:/usr/local/netbeans-6.7.1/java2/modules/ext/hibernate/cglib-2.1.3.jar:/usr/local/netbeans-6.7.1/java2/modules/ext/hibernate/commons-collections-2.1.1.jar:/usr/local/netbeans-6.7.1/ide11/modules/ext/commons-logging-1.1.jar:/usr/local/netbeans-6.7.1/java2/modules/ext/hibernate/dom4j-1.6.1.jar:/usr/local/netbeans-6.7.1/java2/modules/ext/hibernate/ehcache-1.2.3.jar:/usr/local/netbeans-6.7.1/java2/modules/ext/hibernate/jdbc2_0-stdext.jar:/usr/local/netbeans-6.7.1/java2/modules/ext/hibernate/jta.jar:/usr/local/netbeans-6.7.1/java2/modules/ext/hibernate/hibernate3.jar:/usr/local/netbeans-6.7.1/java2/modules/ext/hibernate/hibernate-tools.jar:/usr/local/netbeans-6.7.1/java2/modules/ext/hibernate/hibernate-annotations.jar:/usr/local/netbeans-6.7.1/java2/modules/ext/hibernate/hibernate-commons-annotations.jar:/usr/local/netbeans-6.7.1/java2/modules/ext/hibernate/hibernate-entitymanager.jar:/usr/local/netbeans-6.7.1/java2/modules/ext/hibernate/javassist.jar:/usr/local/netbeans-6.7.1/java2/modules/ext/cglib-2.2.jar:/usr/local/netbeans-6.7.1/java2/modules/ext/spring/spring-2.5.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/spring/spring-webmvc-2.5.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/struts/antlr-2.7.2.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/struts/bsf-2.3.0.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/struts/commons-beanutils-1.7.0.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/struts/commons-chain-1.1.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/struts/commons-digester-1.8.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/struts/commons-fileupload-1.1.1.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/struts/commons-io-1.1.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/struts/commons-logging-1.0.4.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/struts/commons-validator-1.3.1.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/struts/jstl-1.0.2.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/struts/oro-2.0.8.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/struts/standard-1.0.2.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/struts/struts-core-1.3.8.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/struts/struts-el-1.3.8.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/struts/struts-extras-1.3.8.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/struts/struts-faces-1.3.8.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/struts/struts-mailreader-dao-1.3.8.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/struts/struts-scripting-1.3.8.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/struts/struts-taglib-1.3.8.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/struts/struts-tiles-1.3.8.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/standard.jar:/usr/local/netbeans-6.7.1/enterprise5/modules/ext/jstl.jar:/home/tulga/Documents/APIs/mysql-connector-java-5.1.8/mysql-connector-java-5.1.8-bin.jar:/home/tulga/My_Sites/test/build/web/WEB-INF/classes:/usr/local/netbeans-6.7.1/platform10/modules/ext/junit-4.5.jar:/home/tulga/My_Sites/test/build/test/classes" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="java.home" value="/home/tulga/Documents/APIs/jdk1.6.0_16/jre" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="user.language" value="en" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="java.version" value="1.6.0_16" />
+    <property name="java.ext.dirs" value="/home/tulga/Documents/APIs/jdk1.6.0_16/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="sun.boot.class.path" value="/home/tulga/Documents/APIs/jdk1.6.0_16/jre/lib/resources.jar:/home/tulga/Documents/APIs/jdk1.6.0_16/jre/lib/rt.jar:/home/tulga/Documents/APIs/jdk1.6.0_16/jre/lib/sunrsasign.jar:/home/tulga/Documents/APIs/jdk1.6.0_16/jre/lib/jsse.jar:/home/tulga/Documents/APIs/jdk1.6.0_16/jre/lib/jce.jar:/home/tulga/Documents/APIs/jdk1.6.0_16/jre/lib/charsets.jar:/home/tulga/Documents/APIs/jdk1.6.0_16/jre/classes" />
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="file.separator" value="/" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.desktop" value="gnome" />
+    <property name="sun.cpu.isalist" value="" />
+  </properties>
+  <testcase classname="TestOne" name="hello" time="8.593">
+    <error message="Unknown entity: org.junit.Test" type="org.hibernate.MappingException">	at org.hibernate.impl.SessionFactoryImpl.getEntityPersister(SessionFactoryImpl.java:550)
+	at org.hibernate.event.def.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:68)
+	at org.hibernate.impl.SessionImpl.fireLoad(SessionImpl.java:878)
+	at org.hibernate.impl.SessionImpl.load(SessionImpl.java:795)
+	at org.hibernate.impl.SessionImpl.load(SessionImpl.java:788)
+	at TestOne.hello(TestOne.java:50)
+</error>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Dec 23, 2009 7:55:52 PM org.hibernate.cfg.Environment <clinit>
+INFO: Hibernate 3.2.5
+Dec 23, 2009 7:55:52 PM org.hibernate.cfg.Environment <clinit>
+INFO: hibernate.properties not found
+Dec 23, 2009 7:55:52 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: Bytecode provider name : cglib
+Dec 23, 2009 7:55:52 PM org.hibernate.cfg.Environment <clinit>
+INFO: using JDK 1.4 java.sql.Timestamp handling
+Dec 23, 2009 7:55:52 PM org.hibernate.cfg.Configuration configure
+INFO: configuring from resource: /hibernate.cfg.xml
+Dec 23, 2009 7:55:52 PM org.hibernate.cfg.Configuration getConfigurationInputStream
+INFO: Configuration resource: /hibernate.cfg.xml
+Dec 23, 2009 7:55:52 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : modls/SystemUser.hbm.xml
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: modls.SystemUser -> SystemUsers
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindJoinedSubclass
+INFO: Mapping joined-subclass: modls.Teacher -> Teachers
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindCollection
+INFO: Mapping collection: modls.Teacher.lesson -> TeacherLesson
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindJoinedSubclass
+INFO: Mapping joined-subclass: modls.Student -> Students
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindCollection
+INFO: Mapping collection: modls.Student.lesson -> StudentLesson
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : modls/Lesson.hbm.xml
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: modls.Lesson -> Lesson
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindCollection
+INFO: Mapping collection: modls.Lesson.teacher -> TeacherLesson
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindCollection
+INFO: Mapping collection: modls.Lesson.student -> StudentLesson
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : modls/Test.hbm.xml
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: modls.Test -> Test
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindCollection
+INFO: Mapping collection: modls.Test.rooms -> TestRoom
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : modls/Variant.hbm.xml
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: modls.Variant -> Variant
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindCollection
+INFO: Mapping collection: modls.Variant.questions -> VariantQuestions
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : modls/Rooms.hbm.xml
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: modls.Rooms -> Rooms
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : modls/Protocol.hbm.xml
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: modls.Protocol -> Protocol
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : modls/ExamType.hbm.xml
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: modls.ExamType -> ExamType
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : modls/Grade.hbm.xml
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: modls.Grade -> Grade
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : modls/QuestionOrder.hbm.xml
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: modls.QuestionOrder -> QuestionOrder
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : modls/Question.hbm.xml
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: modls.Question -> Question
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindJoinedSubclass
+INFO: Mapping joined-subclass: modls.MultipleChoice -> MultipleChoice
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindJoinedSubclass
+INFO: Mapping joined-subclass: modls.MultipleResponse -> MultipleResponse
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindJoinedSubclass
+INFO: Mapping joined-subclass: modls.TrueFalse -> TrueFalse
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindJoinedSubclass
+INFO: Mapping joined-subclass: modls.FillInBlank -> FillInBlank
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : modls/Answer.hbm.xml
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: modls.Answer -> Answer
+Dec 23, 2009 7:55:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : modls/Topic.hbm.xml
+Dec 23, 2009 7:55:54 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: modls.Topic -> Topic
+Dec 23, 2009 7:55:54 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : modls/Difficulty.hbm.xml
+Dec 23, 2009 7:55:54 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: modls.Difficulty -> Difficulty
+Dec 23, 2009 7:55:54 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : modls/FAnswer.hbm.xml
+Dec 23, 2009 7:55:54 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: modls.FAnswer -> FAnswer
+Dec 23, 2009 7:55:54 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : modls/UFile.hbm.xml
+Dec 23, 2009 7:55:54 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: modls.UFile -> UFile
+Dec 23, 2009 7:55:54 PM org.hibernate.cfg.Configuration doConfigure
+INFO: Configured SessionFactory: null
+Dec 23, 2009 7:55:54 PM org.hibernate.cfg.HbmBinder bindCollectionSecondPass
+INFO: Mapping collection: modls.Teacher.files -> UFile
+Dec 23, 2009 7:55:54 PM org.hibernate.cfg.HbmBinder bindCollectionSecondPass
+INFO: Mapping collection: modls.Student.grade -> Grade
+Dec 23, 2009 7:55:54 PM org.hibernate.cfg.HbmBinder bindCollectionSecondPass
+INFO: Mapping collection: modls.Lesson.topic -> Topic
+Dec 23, 2009 7:55:54 PM org.hibernate.cfg.HbmBinder bindCollectionSecondPass
+INFO: Mapping collection: modls.Lesson.exam -> Test
+Dec 23, 2009 7:55:54 PM org.hibernate.cfg.HbmBinder bindCollectionSecondPass
+INFO: Mapping collection: modls.Test.variant -> Variant
+Dec 23, 2009 7:55:54 PM org.hibernate.cfg.HbmBinder bindCollectionSecondPass
+INFO: Mapping collection: modls.Grade.questionOrder -> QuestionOrder
+Dec 23, 2009 7:55:54 PM org.hibernate.cfg.HbmBinder bindCollectionSecondPass
+INFO: Mapping collection: modls.MultipleChoice.answer -> Answer
+Dec 23, 2009 7:55:54 PM org.hibernate.cfg.HbmBinder bindCollectionSecondPass
+INFO: Mapping collection: modls.MultipleResponse.answer -> Answer
+Dec 23, 2009 7:55:54 PM org.hibernate.cfg.HbmBinder bindCollectionSecondPass
+INFO: Mapping collection: modls.FillInBlank.answers -> FAnswer
+Dec 23, 2009 7:55:54 PM org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: Using Hibernate built-in connection pool (not for production use!)
+Dec 23, 2009 7:55:54 PM org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: Hibernate connection pool size: 20
+Dec 23, 2009 7:55:54 PM org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: autocommit mode: false
+Dec 23, 2009 7:55:54 PM org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/htest
+Dec 23, 2009 7:55:54 PM org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: connection properties: {user=root, password=****}
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: RDBMS: MySQL, version: 5.1.31-1ubuntu2
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.8 ( Revision: ${svn.Revision} )
+Dec 23, 2009 7:55:55 PM org.hibernate.dialect.Dialect <init>
+INFO: Using dialect: org.hibernate.dialect.MySQLDialect
+Dec 23, 2009 7:55:55 PM org.hibernate.transaction.TransactionFactoryFactory buildTransactionFactory
+INFO: Using default transaction strategy (direct JDBC transactions)
+Dec 23, 2009 7:55:55 PM org.hibernate.transaction.TransactionManagerLookupFactory getTransactionManagerLookup
+INFO: No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Automatic flush during beforeCompletion(): disabled
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Automatic session close at end of transaction: disabled
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC batch size: 15
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC batch updates for versioned data: disabled
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Scrollable result sets: enabled
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC3 getGeneratedKeys(): enabled
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Connection release mode: auto
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Maximum outer join fetch depth: 2
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Default batch fetch size: 1
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Generate SQL with comments: disabled
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Order SQL updates by primary key: disabled
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Order SQL inserts for batching: disabled
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory createQueryTranslatorFactory
+INFO: Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+Dec 23, 2009 7:55:55 PM org.hibernate.hql.ast.ASTQueryTranslatorFactory <init>
+INFO: Using ASTQueryTranslatorFactory
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Query language substitutions: {}
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JPA-QL strict compliance: disabled
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Second-level cache: enabled
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Query cache: disabled
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory createCacheProvider
+INFO: Cache provider: org.hibernate.cache.NoCacheProvider
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Optimize cache for minimal puts: disabled
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Structured second-level cache entries: disabled
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Echoing all SQL to stdout
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Statistics: disabled
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Deleted entity synthetic identifier rollback: disabled
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Default entity-mode: pojo
+Dec 23, 2009 7:55:55 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Named query checking : enabled
+Dec 23, 2009 7:55:55 PM org.hibernate.impl.SessionFactoryImpl <init>
+INFO: building session factory
+Dec 23, 2009 7:55:56 PM org.hibernate.impl.SessionFactoryObjectFactory addInstance
+INFO: Not binding factory to JNDI, no JNDI name configured
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: Running hbm2ddl schema update
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: fetching database metadata
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: updating schema
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.Answer
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [multiplechoice_id, id, point, multipleresponse_id, answer]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [fk752f2bde4177079f, primary, fk752f2bde4040a8df]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.Difficulty
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [id, description]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [primary]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.ExamType
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [id, description]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [primary]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.DatabaseMetadata getTableMetadata
+INFO: table not found: FAnswer
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.FillInBlank
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [fillinblank_id]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [primary, fk1db6a40c11efc619]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.Grade
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [id, explanation, variant_id, student_id, score, relativescore]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [student, primary, variant]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.Lesson
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [id, lessonname, code]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [primary]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.MultipleChoice
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [multiplechoice_id]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [primary, fke250eff1ce5260b4]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.MultipleResponse
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [multipleresponse_id]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [primary, fk108f5291f0426a14]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.Protocol
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [content, id, test_id]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [primary, fkc8e4f2b8a42c1f5f]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.Question
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [id, question, difficult, topic_id]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [primary, fkbe5ca006eca2bd15, fkbe5ca00642c25f5e]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.QuestionOrder
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [id, ordernumber, grade_id, question_id]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [primary, fkf1530ae82a51dc15, fkf1530ae8c13ef45f]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.Rooms
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [id, description, networkaddress]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [primary]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.StudentLesson
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [student_id, lesson_id]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [fkebb973339906705f, primary, fkebb9733317038ed5]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.Students
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [student_id, lastname, firstname, code]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [fk73ac29b870a7f35e, primary]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.SystemUsers
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [id, username, pass]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [primary]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.TeacherLesson
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [teacher_id, lesson_id]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [primary, teacher_id, lesson_id]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.Teachers
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [lastname, firstname, code, teacher_id]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [primary, fk9fe214f1670ff457]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.Test
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [protocol_id, id, startdate, isstartfromlogin, description, state, lesson_id, examtype_id, enddate, durationinminute, isregisterstudentatruntime]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [fk27b8b29906705f, fk27b8b279d69f1f, fk27b8b2b74fff9f, primary]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.TestRoom
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [room_id, test_id]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [fkbf7f04ada42c1f5f, primary, fkbf7f04ad77d527b2]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.Topic
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [id, description, lesson_id]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [primary, fk4d3dd0f9906705f]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.TrueFalse
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [point, truefalse_id, value]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [fkc6551c15a46fb990, primary]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.UFile
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [id, name, filename, filetype, teacher_id, url]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [fk4cf3771279ed975, primary]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.Variant
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [id, test_id]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [primary, fk7155a865a42c1f5f]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: htest.VariantQuestions
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [variant_id, question_id]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [fkdeb85a68c13ef45f, primary, fkdeb85a683af27295]
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.DatabaseMetadata getTableMetadata
+INFO: table not found: FAnswer
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+SEVERE: Unsuccessful: create table FAnswer (id integer not null auto_increment, order integer, answer varchar(255), point double precision, fillinblank_id bigint, primary key (id))
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+SEVERE: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order integer, answer varchar(255), point double precision, fillinblank_id bigin' at line 1
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+SEVERE: Unsuccessful: alter table FAnswer add index FKEC235FA4B8824775 (fillinblank_id), add constraint FKEC235FA4B8824775 foreign key (fillinblank_id) references FillInBlank (fillinblank_id)
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+SEVERE: Table 'htest.FAnswer' doesn't exist
+Dec 23, 2009 7:55:56 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: schema update complete
+]]></system-err>
+</testsuite>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="modls.Lesson">
+    <id name="id">
+      <generator class="native"/>
+    </id>
+    <property name="code"/>
+    <property name="lessonName"/>
+    <set name="teacher" table="TeacherLesson">
+      <key column="lesson_id"/>
+      <many-to-many class="modls.Teacher" column="teacher_id"/>
+    </set>
+    <set name="student" table="StudentLesson">
+      <key column="lesson_id"/>
+      <many-to-many class="modls.Student" column="student_id"/>
+    </set>
+  </class>
+  <!-- System User -->
+  <class name="modls.SystemUser" table="SystemUsers">
+    <id name="id">
+      <generator class="native"/>
+    </id>
+    <property name="userName" not-null="true"/>
+    <property name="pass" not-null="true"/>
+    <!-- Teacher -->
+    <joined-subclass name="modls.Teacher" table="Teachers">
+      <key column="teacher_id"/>
+      <property name="code"/>
+      <property name="firstName"/>
+      <property name="lastName"/>
+      <set inverse="true" name="lesson" table="TeacherLesson">
+        <key column="teacher_id" foreign-key="teacher_id"/>
+        <many-to-many class="modls.Lesson" column="lesson_id" foreign-key="lesson_id"/>
+      </set>
+    </joined-subclass>
+    <!-- Student -->
+    <joined-subclass name="modls.Student" table="Students">
+      <key column="student_id"/>
+      <property name="code"/>
+      <property name="firstName"/>
+      <property name="lastName"/>
+      <!--<set name="grade">
+                <key column="student_id"/>
+                <one-to-many class="modls.Grade"/>
+            </set>-->
+      <set inverse="true" name="lesson" table="StudentLesson">
+        <key column="student_id"/>
+        <many-to-many class="modls.Lesson" column="lesson_id"/>
+      </set>
+    </joined-subclass>
+  </class>
+</hibernate-mapping>

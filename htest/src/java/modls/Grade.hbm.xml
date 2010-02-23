@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="modls.Grade">
+    <id name="id">
+      <generator class="native"/>
+    </id>
+    <property name="explanation"/>
+    <property name="score"/>
+    <property name="relativeScore"/>
+    <property name="submitted"/>
+    <property name="start"/>
+    <property name="lastClick"/>
+    <many-to-one class="modls.Student" column="student_id" foreign-key="student" name="student"/>
+    <many-to-one cascade="save-update" class="modls.Variant" column="variant_id" foreign-key="variant" name="variant"/>
+    <set cascade="save-update" name="questionOrder" order-by="orderNumber">
+      <key column="grade_id"/>
+      <one-to-many class="modls.QuestionOrder"/>
+    </set>
+  </class>
+</hibernate-mapping>

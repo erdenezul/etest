@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="WEB-INF/style/general.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery-ui-1.7.2.custom/development-bundle/jquery-1.3.2.js"></script>
+<script type="text/javascript" src="jquery-ui-1.7.2.custom/development-bundle/ui/ui.core.js"></script>
+<script type="text/javascript" src="jquery-ui-1.7.2.custom/development-bundle/ui/ui.accordion.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#accordion").accordion({
+			collapsible: true
+		});
+	});
+</script>
+<style type="text/css">
+<!--
+/*@import url("jquery-ui-1.7.2.custom/development-bundle/themes/base/ui.all.css");*/
+body {
+	margin: 0px;
+	padding: 0px;
+}
+.layer .content .download {
+	text-align: right;
+	padding: 40px;
+}
+.layer .content .journal {
+	text-align: center;
+	padding: 10px;
+}
+.layer .content td {
+	text-align: center;
+}
+-->
+</style>
+</head>
+<body>
+<div class="header">header</div>
+<div class="layer">
+  <table width="100%" border="0">
+    <tr>
+      <td width="20%" align="left" valign="top"><div class="leftpanel">
+          <div>Бауырбек. D.SW40</div>
+          <div id="accordion">
+            <h3><a href="#">Дүн</a></h3>
+            <div>
+              <table id="exam">
+                <tr>
+                  <td> D.SW202 </td>
+                  <td> Явцын сорил - 1 </td>
+                </tr>
+                <tr>
+                  <td> D.SW202 </td>
+                  <td> 30 онооны шалгалт </td>
+                </tr>
+              </table>
+            </div>
+            <h3><a href="#">Шалгалт</a></h3>
+            <div>
+              <div>Бэлдэх</div>
+              <div>Удирдах</div>
+            </div>
+            <h3><a href="#">Асуултын сан</a></h3>
+            <div>
+              <div>Нэмэх</div>
+              <div>Удирдах</div>
+            </div>
+            <h3><a href="#">Хичээл</a></h3>
+            <div>
+              <table id="exam">
+                <tr>
+                  <td> D.SW202 </td>
+                  <td> Жава програмчлал </td>
+                </tr>
+                <tr>
+                  <td> D.SW203 </td>
+                  <td> Объект хандалтат програмчлал </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div id="signout"><a href="#">Гарах</a></div>
+        </div>
+	  </td>
+      <td width="80%" align="left" valign="top">
+	    <div class="content">
+          <table width="100%">
+            <thead>
+			  <tr>
+			    <th colspan="2">Шалгалтын</th>
+				<th rowspan="2">Өгөх оюутны тоо</th>
+				<th rowspan="2">Өгсөн нь</th>
+				<th colspan="2">Огноо</th>
+				<th colspan="2" width="80px">Удирдах<span style="none">(Огноогоороо явагдаж байгаа үед шаардлагагүй)</span></th>
+			  </tr>
+			  <tr>
+			  	<th>Код</th>
+				<th>Төрөл</th>
+				<th>Эхлэх</th>
+				<th>Дуусах</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+			    <td>D.SW202</td>
+				<td>30 онооны</td>
+				<td>19</td>
+				<td>3</td>
+				<td>2009/09/14 08:15</td>
+				<td>2009/09/14 09:15</td>
+				<td><a href="#">Эхэл</a></td>
+			  </tr>
+			  <tr>
+			    <td>D.SW202</td>
+				<td>30 онооны</td>
+				<td>19</td>
+				<td>3</td>
+				<td>2009/09/19 09:15</td>
+				<td>2009/09/14 10:15</td>
+				<td><a href="#">Зогс</a></td>
+			  </tr>
+			  
+			</tbody>
+          </table>
+        </div>
+	  </td>
+    </tr>
+  </table>
+</div>
+<div class="bottom">Юугаа хараад байгаа пизда вэ? </div>
+</body>
+</html>

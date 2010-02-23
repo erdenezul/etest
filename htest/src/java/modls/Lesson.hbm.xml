@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="modls.Lesson">
+    <id name="id">
+      <generator class="native"/>
+    </id>
+    <property name="code"/>
+    <property name="lessonName"/>
+    <set lazy="false" name="topic">
+      <key column="lesson_id"/>
+      <one-to-many class="modls.Topic"/>
+    </set>
+    <set name="teacher" table="TeacherLesson">
+      <key column="lesson_id"/>
+      <many-to-many class="modls.Teacher" column="teacher_id"/>
+    </set>
+    <set name="student" table="StudentLesson">
+      <key column="lesson_id"/>
+      <many-to-many class="modls.Student" column="student_id"/>
+    </set>
+    <set cascade="save-update" name="exam" lazy="false">
+      <key column="lesson_id"/>
+      <one-to-many class="modls.Test"/>
+    </set>
+  </class>
+</hibernate-mapping>

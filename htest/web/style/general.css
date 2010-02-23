@@ -1,0 +1,26 @@
+.header {
+	height: 130px;
+}
+.layer .leftpanel {
+    
+}
+.bottom {
+	text-align: center;
+}
+
+.layer .content {
+	min-height:700px;
+	right: 0px;
+	position: relative;
+	padding: 20px;
+	
+}
+.layer .leftpanel #signout {
+	text-align:center;
+}
+.layer .leftpanel #accordion #exam {
+	padding: 10px;
+}
+.layer .content .questionmenu {
+	text-align: right;
+}

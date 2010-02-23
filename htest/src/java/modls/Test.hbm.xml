@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="modls.Test">
+    <id name="id">
+      <generator class="native"/>
+    </id>
+    <property column="description" name="desc"/>
+    <property name="durationInMinute"/>
+    <property name="startDate" type="timestamp"/>
+    <property name="endDate" type="timestamp"/>
+    <property name="isRegisterStudentAtRuntime" type="boolean"/>
+    <property name="isStartFromLogin" type="boolean"/>
+    <property name="state"/>
+    <!--<one-to-one name="examType" class="modls.ExamType" foreign-key="type_id" />-->
+    <many-to-one class="modls.ExamType" column="examtype_id" name="examType" lazy="false"/>
+    <many-to-one cascade="all" class="modls.Protocol" column="protocol_id" name="protocol"/>
+    <many-to-one class="modls.Lesson" column="lesson_id" name="lesson"/>
+    <set name="rooms" table="TestRoom">
+      <key column="test_id"/>
+      <many-to-many class="modls.Rooms" column="room_id"/>
+    </set>
+    <set cascade="all" inverse="true" name="variant">
+      <key column="test_id"/>
+      <one-to-many class="modls.Variant"/>
+    </set>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/htest</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">mongol</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <mapping resource="modls/SystemUser.hbm.xml"/>
+    <mapping resource="modls/Lesson.hbm.xml"/>
+    <mapping resource="modls/Test.hbm.xml"/>
+    <mapping resource="modls/Variant.hbm.xml"/>
+    <mapping resource="modls/Rooms.hbm.xml"/>
+    <mapping resource="modls/Protocol.hbm.xml"/>
+    <mapping resource="modls/ExamType.hbm.xml"/>
+    <mapping resource="modls/Grade.hbm.xml"/>
+    <mapping resource="modls/QuestionOrder.hbm.xml"/>
+    <mapping resource="modls/Question.hbm.xml"/>
+    <mapping resource="modls/Answer.hbm.xml"/>
+    <mapping resource="modls/Topic.hbm.xml"/>
+    <mapping resource="modls/Difficulty.hbm.xml"/>
+    <mapping resource="modls/FAnswer.hbm.xml"/>
+    <mapping resource="modls/UFile.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,48 @@
+
+<!--    <class name="modls.Test">
+        <id name="id">
+            <generator class="native"/>
+        </id>
+        <property column="description" name="desc"/>
+        <property name="durationInMinute"/>
+        <property name="startDate" type="timestamp"/>
+        <property name="endDate" type="timestamp"/>
+        <property name="isRegisterStudentAtRuntime" type="boolean"/>
+        <property name="isStartFromLogin" type="boolean"/>
+        <property name="state"/>
+        <property name="examType" type="modls."/>
+        <one-to-one name="examType" class="modls.ExamType" foreign-key="type_id" />
+        <one-to-one name="protocol" class="modls.Protocol" foreign-key="protocol_id"/>
+        <set name="rooms" table="Link_test_room">
+            <key column="test_id" foreign-key="test_id2"/>
+            <many-to-many class="modls.Rooms" column="rooms_id" foreign-key="room_id2"/>
+        </set>
+        <set name="variant">
+            <key column="test_id" foreign-key="test_id"/>
+            <one-to-many class="modls.Variant"/>
+        </set>
+    </class>
+    <class name="modls.Variant">
+        <id name="id">
+            <generator class="native"/>
+        </id>
+    </class>
+    <class name="modls.Rooms">
+        <id name="id">
+            <generator class="native"/>
+        </id>
+        <property column="description" name="desc"/>
+        <property name="networkaddress"/>
+    </class>
+    <class name="modls.Protocol">
+        <id name="id">
+            <generator class="native"/>
+        </id>
+        <property name="content"/>
+    </class>
+    <class name="modls.ExamType">
+        <id name="id">
+            <generator class="native"/>
+        </id>
+        <property column="description" name="desc"/>
+    </class>-->

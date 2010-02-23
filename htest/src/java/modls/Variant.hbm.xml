@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="modls.Variant">
+    <id name="id">
+      <generator class="native"/>
+    </id>
+    <many-to-one column="test_id" name="test"/>
+    <set name="questions" table="VariantQuestions" cascade="save-update">
+      <key column="variant_id"/>
+      <many-to-many class="modls.Question" column="question_id"/>
+    </set>
+  </class>
+</hibernate-mapping>

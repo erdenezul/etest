@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class mutable="true" name="pack.Dog" table="DOG">
+    <id name="id">
+      <generator class="native"/>
+    </id>
+    <property column="dog_name" name="name"/>
+    <set name="puppies">
+      <key column="daddy_id"/>
+      <one-to-many class="pack.Dog"/>
+    </set>
+    <!--<many-to-one name="parent" column="parent_id" class="pack.Dog"/>-->
+    <!--<joined-subclass name="pack.SuperDog" table="SUPER_DOG">
+            <key column="DOG"/>
+            <property name="skill"/>
+        </joined-subclass>-->
+  </class>
+  <class name="pack.Group" table="GROUPS">
+    <id column="GROUP_ID" name="id">
+      <generator class="native"/>
+    </id>
+    <property column="NAME" name="name"/>
+    <set inverse="true" name="kids" table="GROUP_KID">
+      <key column="GROUP_ID"/>
+      <many-to-many class="pack.Kid" column="KID_ID"/>
+    </set>
+  </class>
+  <class name="pack.Kid" table="KIDS">
+    <id column="KID_ID" name="id">
+      <generator class="native"/>
+    </id>
+    <property column="NAME" name="name"/>
+    <set name="groups" table="GROUP_KID">
+      <key column="KID_ID"/>
+      <many-to-many class="pack.Group" column="GROUP_ID"/>
+    </set>
+  </class>
+</hibernate-mapping>
